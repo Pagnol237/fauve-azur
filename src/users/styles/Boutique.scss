@@ -1,0 +1,61 @@
+@import 'Main.scss';
+
+.shopmain{
+    padding:  100px 50px 50px 50px;
+    background-color: #f5f7fa;
+}
+
+.shoping-card{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:15px;
+}
+.image-box{
+    width: 100%;
+    height: auto;
+}
+
+.product-size{
+    width: 100%;
+    height: auto;
+}
+
+.product-box{
+    background-color: white;
+    border-radius: 15px;
+    min-height: 200px;
+    box-shadow: 0px 0px 15px rgba($color: #aaaaaa, $alpha: 0.5);
+    width: 100%;
+    height: 420px;
+}
+
+.product-name{
+    color: rgb(48, 47, 47);
+    font-family: $font1;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.product-price{
+    font-family: $font6;
+    color: rgb(59, 59, 59);
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.buy{
+    background-color: $vert;
+    color: white;
+    font-family: $font1;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: $jaune;
+}

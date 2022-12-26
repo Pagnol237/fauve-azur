@@ -1,0 +1,102 @@
+@import 'Main.scss';
+
+.clubmain{
+    width: 100%;
+    height:auto;
+    padding: 100px 50px 50px 50px;
+}
+.section1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.section1-a{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.section1-b{
+    width: 70%;
+    height: auto;
+    text-align: justify;
+    font: $font6;
+    padding-left: 50px;
+}
+.club-title{
+    width: 100%;
+    height: auto;
+    color: $vert;
+    font-family: $font4;
+    margin-top: 30px;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.section2{
+    width: 100%;
+    height: auto;
+}
+.club-t{
+    width: 70%;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
+.club-thead{
+    width: 100%;
+    background-color: $jaune;
+}
+.club-thead td{
+    width: calc(100%/25);
+    border: none;
+    color: $vert;
+    font-family: $font1;
+}
+
+.club-body td{
+    width: calc(100%/25);
+    border: none;
+    color: rgb(56, 55, 55);
+    font-family: $font6;
+}
+
+//media query
+
+@media screen and (max-width:700px){
+
+    .clubmain{
+
+        padding: 100px 30px 30px 30px;
+    }
+
+    .section1{
+        flex-direction: column;
+    }
+    .section1-a{
+        width: 100%;
+    }
+
+    .section1-b{
+        width: 100%;
+        padding: 25px 0px 0px 0px;
+    }
+    .club-t{
+        width: 100%;
+    }
+
+    .club-thead td{
+        width: calc(100%/45);
+    }
+    
+    .club-body td{
+        width: calc(100%/45);
+        font-size: 13.5px;
+    }
+
+}

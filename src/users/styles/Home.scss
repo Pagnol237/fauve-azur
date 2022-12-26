@@ -1,0 +1,480 @@
+@import 'Main.scss';
+
+/* header style*/
+
+.mainHeader{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+.bg1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: $font1;
+    color: white;
+   
+
+}
+.slideTexte{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    padding-left: 50px;
+
+    .headerText1{
+        color: white;
+        font-size: 38px;
+        font-family: $font2;
+    }
+    .headerText2{
+        font-family: $font4;
+        font-size: 55px;
+        margin-top: 3px;
+        letter-spacing: 3px;
+    }
+    .slideButton{
+        width: 200px;
+        text-align: center;
+        padding:15px;
+        font-size: 15px;
+        margin-top: 25px;
+        border: solid white 3px;
+        background-color: none;
+        cursor: pointer;
+    }
+    .slideButton:hover{
+        background-color: white;
+        color: $vert;
+    }
+}
+
+.headerLastscore{
+    position:absolute;
+    background-color: rgba(4, 34, 12, 0.7);
+    bottom: 0px;
+    height: 100px;
+    width: 45%;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+   
+
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    height: 100%;
+    padding-right: 20px;
+    border-right: solid 2px white;
+    width: 50%;
+}
+.block1-1{
+    width: 100%;
+    height: 30%;
+    font-family: $font1;
+    color: white;
+    font-size: 12px;
+    border-bottom: solid white 1px;
+}
+.block1-2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .headerLogo{
+        width: 90%;
+    }
+    p{
+        line-height: 50px;
+        text-align: center;
+        font-family: $font1;
+        color: white;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+    }
+}
+    
+    
+
+.block2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    width: 50%;
+    color: white;
+}
+.lastscore{
+    width: 100%;
+    height: auto;
+}
+.calendaIcon{
+    font-size: 25px;
+}
+.herdercalendaLink{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+.herdercalendaLink:hover{
+    color: $jaune;
+}
+
+// next game design
+
+.NextgameMain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    padding: 0px 50px 0px 50px;
+    background-color: rgb(238, 241, 241);
+
+}
+
+.nextGame-block1-title{
+    font-family: $font4;
+    color: $vert;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.nextgameInfo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: $font2;
+    margin-bottom: 5px;
+}
+
+.nextgameInfo-icon{
+    margin-right: 10px;
+    font-size: 25px;
+    color: $vertClair;
+}
+.nextgameInfo-text{
+    color: $colorText;
+    font-weight: bold;
+}
+
+.nextGame-block2{
+    background:linear-gradient(90deg,$bg1, $bg);
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.nextGame-block1{
+    padding-top: 50px;
+}
+
+.nextgameInfo-logocontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.teamLogo{
+    width: 125px;
+}
+
+.teamName{
+    width: 100%;
+    text-align: center;
+    font-family: $font1;
+}
+.vs{
+    padding: 0px 30px 0px 30px;
+    font-family: $font3;
+    font-size: 60px;
+    color: $jaune;
+}
+
+//classement design
+
+.tbl{
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-collapse:collapse;
+}
+
+tr{
+    width: 100%;
+}
+tr td{
+    padding: 10px;
+    border: none;
+}
+td:nth-child(1){
+    text-align: left;
+    padding-left: 5px;
+}
+th:nth-child(1){
+    text-align: left;
+    padding-left: 5px;
+}
+.logo-clasement{
+    width: 35px;
+}
+.activ{
+    background-color: $jaune;
+    font-size: 18px;
+    font-weight: bold;
+    color:$vert
+}
+tr td{
+    border: none;
+}
+
+//actualité
+
+.articleHomemain{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    
+}
+.articleBoxContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+}
+.boxContainer:hover{
+    box-shadow: 0px 0px 12px rgba($color: #000000, $alpha: 0.7);
+    transition: 0.5s;
+}
+.boxContainer{
+    box-shadow: 0px 0px 10px rgba($color: #aaa, $alpha: 0.5);
+    transition: 1s;
+    padding-bottom: 15px;
+}
+
+.photoContainer{
+    background-color: white;
+    height:auto;
+    width: 100%;
+    overflow: hidden;
+}
+.photo{
+    width: 100%;
+    height: auto;
+}
+.articleTitle{
+    font-family: $font1;
+    color: rgb(51, 50, 50);
+    padding: 0px 15px 0px 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    font-weight: bolder;
+    color: $vert;
+}
+
+.articleTEXTE{
+    margin-top: 8px;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+    color: rgb(46, 46, 46);
+    font-family: $font6;
+    -webkit-line-clamp:4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.homearticleLink{
+    text-decoration: none;
+}
+
+// sponsort
+
+.sponsortmain{
+    width: 100%;
+    height: auto;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    p{
+        color: $jaune;
+        font-family: $font4;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    img{
+        height: 130px;
+        width: auto;
+    }
+}
+//footer
+
+.footermain{
+    width: 100%;
+    min-height: 200px;
+    background-color: #555555;
+}
+.footer1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 50px 15px 50px;
+    p{
+        color: white;
+        font-family: $font1;
+    }
+    form{
+        width: 40%;
+        color: white;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        background-color: rgba(112, 112, 112, 0.7);
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 25px;
+        font-family: $font1;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #aaaaaa;
+    }
+}
+.footer2{
+    width: 100%;
+    background-color: rgba(56, 56, 56, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px 3px 50px;
+}
+.socialLink{
+    color: white;
+    font-size: 30px;
+    margin: 0px 2px 0px 2px;
+}
+.socialLink:hover{
+    color: $jaune;
+}
+
+.footer3{
+    width: 100%;
+    height: auto;
+    background-color: rgba(56, 56, 56, 0.7);
+    text-align: center;
+    color: rgb(235, 233, 233);
+}
+.dev_link{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(156, 155, 155);
+    font-size: 13px;
+}
+
+// next game exeption
+
+.ng-tb{
+   width: 100%;
+   display: none;
+}
+.ng-tb tr td{
+    text-align: center;
+    padding: 0px;
+}
+
+//slide review style
+
+.slidelink{
+    text-decoration: none;
+    color: white;
+}
+
+//responsive
+
+// width <= 1000
+
+@media screen and (max-width:900px){
+    .headerLastscore{
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .block1{
+        padding-left: 30px;
+    }
+
+    .block2{
+        padding-right: 30px;
+    }
+
+.NextgameMain{
+    padding: 0px;
+}
+
+.nextGame-block1{
+    padding: 50px 30px 0px 30px;
+}
+
+.nextGame-block2{
+    background-color: $bg1;
+    padding: 50px 30px 15px 30px;
+}
+
+.articleHomemain{
+    padding: 30px;
+}
+
+.footer1{
+    padding: 15px 30px 15px 30px;
+    form{
+        width: 100%;
+        color: white;
+    }
+}
+.slideTexte{
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+
+    .headerText1{
+        font-size: 28px;
+    }
+    .headerText2{
+        font-size: 37px;
+    }
+}
+.nextgameInfo-logocontainer{
+  display: none;
+}
+.ng-tb{
+    display: block;
+ }
+}

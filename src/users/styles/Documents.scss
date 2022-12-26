@@ -1,0 +1,55 @@
+@import 'Main.scss';
+
+.docmain{
+    padding: 100px 50px 10px 50px;
+    min-height: 100vh;
+
+}
+
+.fileBox{
+    width: 100%;
+    min-height: 50px;
+    box-shadow: 0px 0px 5px rgba($color: #272727, $alpha: 0.5);
+
+}
+
+.filelogo{
+    font-size: 35px;
+    color: $vert;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.filename{
+    font-size: 18px;
+    color: #272727;
+    float: left;
+    padding-left: 25px;
+    font-family: $font1;
+    height: 50px;
+    line-height: 50px;
+}
+
+.downloadBtn{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $vert;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    p{
+        padding-right: 10px;
+    }
+}
+
+.downloadBtn:hover{
+    background-color: $jaune;
+    color: $vert;
+}

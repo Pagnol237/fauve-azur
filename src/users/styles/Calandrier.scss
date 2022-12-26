@@ -1,0 +1,115 @@
+@import 'main.scss';
+
+.calendermain{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 50px 50px 50px;
+    background-color: rgb(237, 241, 241);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 50px;
+}
+
+.calenda-block1{
+    background-color: rgb(255, 255, 255);
+}
+
+.calenda-block2{
+    background-color: white;
+}
+
+.phase-title{
+    background-color: $jaune;
+    padding: 10px;
+    font-family: $font4;
+    text-align: center;
+    color: $vert;
+    font-size: 20px;
+}
+
+.N-journee{
+    width: 100%;
+    height: auto;
+    font-family: $font1;
+    color: $vert;
+    text-align: center;
+    padding: 7px;
+}
+
+.team-logo{
+    width: 50px;
+}
+.team-box{
+    width: 100%;
+    height: auto;
+   
+}
+.vs-calenda{
+    color: $jaune;
+    font-family: $font3;
+    font-size: 30px;
+    width: calc(100%/20);
+    background-color: $vert;
+}
+.logo-team-a{
+    width: calc(100%/10);
+}
+
+.team-name{
+    font-family: $font1;
+    padding: 0px 10px 0px 10px;
+}
+.game-date{
+    width: 100%;
+    height: auto;
+    font-family: $font2;
+    text-align: center;
+}
+
+hr{
+    border-bottom: solid $vert 1px;
+    width: 50%;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+table{
+    width: 100%;
+}
+table td{
+    text-align: center;
+    width: calc(100%/3);
+}
+
+table td:nth-child(2){
+    width: calc(100%/26);
+}
+table td:nth-child(4){
+    width: calc(100%/26);
+}
+.tb1 td:nth-child(1){
+    text-align: right;
+    font-family: $font1;
+}
+.tb1 td:nth-child(5){
+    text-align: left;
+    font-family: $font1;
+}
+
+// media query
+
+@media screen and (max-width:600px){
+    .calendermain{
+        padding: 100px 30px 50px 30px;
+    }
+    .tb1 td:nth-child(1){
+        font-size: 15px;
+        text-align: center;
+    }
+    .tb1 td:nth-child(5){
+        font-size: 15px;
+        text-align: center;
+    }
+}

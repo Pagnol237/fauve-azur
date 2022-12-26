@@ -1,0 +1,153 @@
+@import 'Main.scss';
+
+.actualitéMain{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 100px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.leftsite{
+    width: 20%;
+    margin-right: 40px;
+    display: block;
+}
+.midle{
+    width: 40%;
+}
+.rightsite{
+    width: 20%;
+    margin-left: 40px;
+}
+.big-image-ctn{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.big-img{
+    width: 100%;
+    height: auto;
+}
+.title-container{
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    background-color: rgba( #000000, 0.5);
+    padding: 25px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.titre{
+    font-size: 30px;
+    font-family: $font4;
+}
+
+.sous-titre{
+    font-size: 17px;
+    font-family: $font2;
+}
+.article-texte{
+ color: #000000;
+ font-family: $font6;
+ text-align: justify;
+ margin-top: 20px;
+}
+
+.block-title{
+    font-family: $font1;
+    color: $vert;
+    font-size: 20px;
+}
+form{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+
+    input{
+        width: 100%;
+        padding: 10px;
+        background-color: rgba( #3f3f3e, 0.3);
+        margin-top: 7px;
+        border: none;
+        outline: none;
+    }
+
+    button{
+        border: none;
+        padding: 10px;
+        background-color: $vert;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.7s;
+    }
+    button:hover{
+        color: #3f3e3e;
+        background-color: $jaune;
+        transition: 0.7s;
+    }
+}
+.ads{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+.ads-img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.allads{
+    border: double 5px $vert;
+    color: $vert;
+    display: flex;
+    font-family: $font5;
+    z-index: 20;
+}
+.box2{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:700px) {
+
+    .actualitéMain{
+        padding: 100px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .leftsite{
+        display:none;
+    }
+    .midle{
+        width: 100%;
+    }
+    .rightsite{
+        width: 100%;
+        margin: 0px;
+        padding-top: 50px;
+    }
+
+    .title-container{
+        padding: 25px 10px 10px 10px;
+
+    }
+    
+    .titre{
+        font-size: 20px;
+        font-family: $font4;
+    }
+    
+    .sous-titre{
+        font-size: 15px;
+        font-family: $font2;
+    }
+}

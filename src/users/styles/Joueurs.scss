@@ -1,0 +1,183 @@
+@import 'Main.scss';
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.joueurMain{
+    width: 100%;
+    min-height: 250px;
+    padding: 100px 50px 50px 50px;
+}
+
+.staffmain{
+    width: 100%;
+    min-height: 200px;
+    background-color: orange;
+    border-top: $vert solid 5px;
+}
+
+.playersmain{
+    width: 100%;
+    min-height: 200px;
+    padding-top: 25px;
+    border-top: $vert solid 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:20px
+}
+ul{
+    display: inline-block;
+    text-decoration: none;
+}
+.tabmain{
+    width: 100%;
+}
+.active-btn{
+    display: inline-block;
+    width: 200px;
+    background-color: $vert;
+    font-family: $font1;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.7s;
+}
+.btn{
+    background-color: #b1facf;
+    color: rgb(44, 43, 43);
+    display: inline-block;
+    width: 200px;
+    font-family: $font1;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.7s;
+}
+.contenu{
+    display: none;
+}
+.active-contenu{
+    display: block;
+}
+
+.box{
+    background: linear-gradient(130deg, #266253 , #786a20 );
+    position: relative;
+    cursor: pointer;
+}
+.box:hover .picture{
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0,0.7) );
+    transition: 0.7s;
+}
+.box:hover .dossard{
+    filter: drop-shadow(20px 10px 5px rgb(0, 0, 0,0.5) );
+    transition: 0.7s;
+}
+
+.box:hover .nom-poste{
+    opacity: 1;
+    transition: 0.9s;
+}
+.picture{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(-10px 10px 10px rgb(0, 0, 0,0.7) );
+    transition: 0.7s;
+}
+
+.dossard-contain{
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    position: absolute ;
+    right: 20px;
+    top: 40px;
+}
+.dossard{
+    color: rgb(255, 255, 255);
+    font-family: $font4;
+    font-size: 75px;
+    filter: drop-shadow(-20px 10px 5px rgb(0, 0, 0,0.5) );
+    transition: 0.7s;
+}
+.flag{
+    width: 50px;
+    border: solid 1px white;
+}
+
+.nom-poste{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    text-align: right;
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 5;
+    .nom-j{
+        color: white;
+        font-family: $font1;
+        text-align: right;
+        font-size: 20px;
+    }
+    .poste-j{
+        color: #b1facf;
+        text-align: center;
+        font-weight: $font2;
+    }
+}
+
+// video galerie
+.video-gallerie-main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:45px;
+    margin-top: 25px;
+}
+
+.vd{
+    border-radius: 25px 25px 25px 25px;
+    overflow: hidden;
+}
+
+.video-title{
+    font-family: $font1;
+    color: #373838;
+
+    span{
+        font-style: italic;
+        font-size: 13px;
+        font-family: $font6;
+    }
+}
+
+.video-saison{
+    color: $vert;
+    font-family: $font1;
+}
+
+
+//responsive
+
+@media screen and (max-width:900px){
+    .active-btn{
+        width: 50%;
+    }
+
+    .btn{
+        width: 50%;
+    }
+
+    .joueurMain{
+        padding: 100px 30px 50px 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .nom-poste{
+        opacity: 1;
+    }
+}
